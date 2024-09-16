@@ -1,0 +1,2 @@
+# Calculation-Test
+口算测试小程序阶段练习，主要用于练习navigation结合fragment、sharedPreference、databinding等的使用
