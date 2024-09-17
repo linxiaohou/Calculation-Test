@@ -11,7 +11,9 @@ import androidx.lifecycle.SavedStateHandle;
 
 import java.util.Random;
 
-/** @noinspection DataFlowIssue*/
+/**
+ * @noinspection DataFlowIssue
+ */
 public class MyViewModel extends AndroidViewModel {
     SavedStateHandle handle;
     private static final String KEY_HIGH_SCORE = "key_high_score";
@@ -66,8 +68,8 @@ public class MyViewModel extends AndroidViewModel {
         int OPERATOR_RANDOM = 5;
         Random random = new Random();
         int x, y, z;
-        x = random.nextInt(LEVEL) + 1;
-        y = random.nextInt(LEVEL) + 1;
+        x = random.nextInt(LEVEL) + 2;
+        y = random.nextInt(LEVEL) + 2;
         z = random.nextInt(OPERATOR_RANDOM);
         if (z == 0) {
             getOperator().setValue("+");
