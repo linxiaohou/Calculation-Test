@@ -95,8 +95,8 @@ public class MyViewModel extends AndroidViewModel {
             }
         } else if (z == 2) {
             while (x * y > LEVEL) {
-                x = random.nextInt(LEVEL) + 1;
-                y = random.nextInt(LEVEL) + 1;
+                x = random.nextInt(LEVEL) + 2;
+                y = random.nextInt(LEVEL) + 2;
             }
             getOperator().setValue("×");
             getAnswer().setValue(x * y);
@@ -104,8 +104,8 @@ public class MyViewModel extends AndroidViewModel {
             getRightNumber().setValue(y);
         } else if (z == 3) {
             while (x * y > LEVEL) {
-                x = random.nextInt(LEVEL) + 1;
-                y = random.nextInt(LEVEL) + 1;
+                x = random.nextInt(LEVEL) + 2;
+                y = random.nextInt(LEVEL) + 2;
             }
             getOperator().setValue("÷");
             getAnswer().setValue(x);
